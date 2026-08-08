@@ -22,8 +22,6 @@ export function Footer() {
             Navegación
           </span>
           <FooterLink href="#herramientas">Herramientas</FooterLink>
-          <FooterLink href="#servicios">Servicios</FooterLink>
-          <FooterLink href="#nosotros">Nosotros</FooterLink>
           <FooterLink href="#contacto">Contacto</FooterLink>
           <FooterLink href="/dashboard">Mi dashboard</FooterLink>
         </div>
