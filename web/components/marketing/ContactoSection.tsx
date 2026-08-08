@@ -1,5 +1,4 @@
 import { Suspense } from "react";
-import { PhotoPlaceholder } from "@/components/ui/PhotoPlaceholder";
 import { Faq } from "@/components/ui/Faq";
 import {
   IconClock,
@@ -14,22 +13,13 @@ export function ContactoSection() {
   return (
     <section id="contacto" className="mx-auto max-w-[1240px] scroll-mt-8 px-8 py-24">
       {/* HERO */}
-      <div className="relative mb-14 -mx-8 h-[420px] overflow-hidden">
-        <PhotoPlaceholder
-          label="Foto de Rodrigo — luz natural, fondo claro"
-          className="absolute inset-0 h-full w-full"
-        />
-        <div className="absolute inset-0 bg-[linear-gradient(90deg,rgba(16,16,16,0.82)_0%,rgba(16,16,16,0.55)_42%,rgba(16,16,16,0.05)_70%)]" />
-        <div className="relative flex h-full items-center px-8">
-          <div className="max-w-[520px]">
-            <h2 className="mb-4 text-[40px] font-extrabold leading-[1.15] tracking-tight text-white">
-              Hablemos de tus ventas.
-            </h2>
-            <p className="text-[17px] leading-relaxed text-border">
-              Cuéntanos qué necesitas — te respondemos en menos de 24 horas.
-            </p>
-          </div>
-        </div>
+      <div className="mb-14 max-w-[520px]">
+        <h2 className="mb-4 text-[40px] font-extrabold leading-[1.15] tracking-tight text-ink">
+          Hablemos de tus ventas.
+        </h2>
+        <p className="text-[17px] leading-relaxed text-ink-secondary">
+          Cuéntanos qué necesitas — te respondemos en menos de 24 horas.
+        </p>
       </div>
 
       {/* BENEFICIOS */}
