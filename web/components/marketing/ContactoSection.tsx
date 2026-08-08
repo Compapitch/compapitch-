@@ -3,7 +3,6 @@ import { Faq } from "@/components/ui/Faq";
 import {
   IconClock,
   IconMail,
-  IconPin,
   IconShield,
   IconWhatsapp,
 } from "@/components/ui/icons";
@@ -45,19 +44,8 @@ export function ContactoSection() {
           <DirectContact
             icon={IconWhatsapp}
             label="WhatsApp"
-            value="+52 33 1234 5678"
-            href="https://wa.me/523312345678"
-          />
-          <DirectContact
-            icon={IconClock}
-            label="Agendar llamada"
-            value="30 minutos, sin costo"
-            href="#"
-          />
-          <DirectContact
-            icon={IconPin}
-            label="Ubicación"
-            value="Guadalajara, Jalisco"
+            value="+52 33 1977 0710"
+            href="https://wa.me/523319770710"
           />
         </div>
       </div>
