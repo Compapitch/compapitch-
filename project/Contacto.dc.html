@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F4F5F6; font-family: 'Plus Jakarta Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #6B7A90; text-decoration: none; }
+    a:hover { color: #55657C; }
+    * { box-sizing: border-box; }
+    input::placeholder, textarea::placeholder { color: #8B8F95; }
+  </style>
+  <script src="./image-slot.js"></script>
+</helmet>
+
+<div style="background:#F4F5F6;color:#101010;min-height:100vh">
+  <main style="max-width:1240px;margin:0 auto;padding:48px 32px 96px">
+
+    <nav style="display:flex;align-items:center;gap:8px;margin-bottom:32px">
+      <a href="#" style="font-size:14px;font-weight:600;color:#8B8F95">Inicio</a>
+      <span style="font-size:14px;color:#8B8F95">/</span>
+      <span style="font-size:14px;font-weight:600;color:#101010">Contacto</span>
+    </nav>
+
+    <!-- HERO -->
+    <section style="position:relative;width:100%;height:440px;overflow:hidden;margin:0 -32px 56px">
+      <image-slot id="contacto-rodrigo" shape="rect" placeholder="Foto de Rodrigo — luz natural, fondo claro" style="position:absolute;inset:0;width:100%;height:100%"></image-slot>
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(16,16,16,0.82) 0%, rgba(16,16,16,0.55) 42%, rgba(16,16,16,0.05) 70%)"></div>
+      <div style="position:relative;height:100%;display:flex;align-items:center;padding:0 32px">
+        <div style="max-width:520px">
+          <h1 style="font-size:42px;font-weight:800;margin:0 0 16px;letter-spacing:-0.01em;line-height:1.15;color:#FFFFFF">Hablemos de tus ventas.</h1>
+          <p style="font-size:17px;color:#E8EAEC;line-height:1.6;margin:0">Cuéntanos qué necesitas — te respondemos en menos de 24 horas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- BENEFICIOS -->
+    <div style="display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:24px;margin-bottom:64px">
+      <div style="display:flex;align-items:center;gap:14px;background:#FFFFFF;border:1px solid #E8EAEC;border-radius:24px;padding:20px 24px">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:14px;background:#101010;flex-shrink:0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#FFFFFF" stroke-width="1.8"/><path d="M12 7v5l3.5 2" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        <span style="font-size:15px;font-weight:700;color:#101010">Respuesta rápida</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;background:#FFFFFF;border:1px solid #E8EAEC;border-radius:24px;padding:20px 24px">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:14px;background:#101010;flex-shrink:0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z" stroke="#FFFFFF" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </span>
+        <span style="font-size:15px;font-weight:700;color:#101010">Información segura</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:14px;background:#FFFFFF;border:1px solid #E8EAEC;border-radius:24px;padding:20px 24px">
+        <span style="display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border-radius:14px;background:#101010;flex-shrink:0">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><circle cx="9" cy="9" r="3.5" stroke="#FFFFFF" stroke-width="1.6"/><path d="M3.5 20c0-3.5 2.5-6 5.5-6s5.5 2.5 5.5 6" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><path d="M16 9.5a3 3 0 100-6" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/><path d="M18 14c2 .6 3.5 2.6 3.5 6" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </span>
+        <span style="font-size:15px;font-weight:700;color:#101010">Atención personalizada</span>
+      </div>
+    </div>
+
+    <!-- FORMULARIO + CONTACTO DIRECTO -->
+    <div style="display:grid;grid-template-columns:1.3fr 0.9fr;gap:24px;margin-bottom:96px">
+      <div style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:32px;padding:40px">
+        <h3 style="font-size:20px;font-weight:700;margin:0 0 24px">Envíanos un mensaje</h3>
+        <form style="display:flex;flex-direction:column;gap:16px">
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div>
+              <label style="display:block;font-size:13px;font-weight:600;color:#101010;margin-bottom:8px">Nombre</label>
+              <input type="text" placeholder="Tu nombre" style="width:100%;border:1px solid #E8EAEC;border-radius:18px;padding:14px 18px;font-size:15px;font-family:inherit;background:#F4F5F6;color:#101010" />
+            </div>
+            <div>
+              <label style="display:block;font-size:13px;font-weight:600;color:#101010;margin-bottom:8px">Correo</label>
+              <input type="email" placeholder="tucorreo@ejemplo.com" style="width:100%;border:1px solid #E8EAEC;border-radius:18px;padding:14px 18px;font-size:15px;font-family:inherit;background:#F4F5F6;color:#101010" />
+            </div>
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+            <div>
+              <label style="display:block;font-size:13px;font-weight:600;color:#101010;margin-bottom:8px">Empresa <span style="color:#8B8F95;font-weight:400">(opcional)</span></label>
+              <input type="text" placeholder="Nombre de tu agencia" style="width:100%;border:1px solid #E8EAEC;border-radius:18px;padding:14px 18px;font-size:15px;font-family:inherit;background:#F4F5F6;color:#101010" />
+            </div>
+            <div>
+              <label style="display:block;font-size:13px;font-weight:600;color:#101010;margin-bottom:8px">Teléfono <span style="color:#8B8F95;font-weight:400">(opcional)</span></label>
+              <input type="tel" placeholder="+52 33 1234 5678" style="width:100%;border:1px solid #E8EAEC;border-radius:18px;padding:14px 18px;font-size:15px;font-family:inherit;background:#F4F5F6;color:#101010" />
+            </div>
+          </div>
+          <div>
+            <label style="display:block;font-size:13px;font-weight:600;color:#101010;margin-bottom:8px">¿En qué podemos ayudarte?</label>
+            <div style="position:relative">
+              <select style="width:100%;border:1px solid #E8EAEC;border-radius:18px;padding:14px 44px 14px 18px;font-size:15px;font-family:inherit;background:#F4F5F6;color:#101010;appearance:none">
+                <option>Dudas sobre herramientas</option>
+                <option>Servicios personalizados</option>
+                <option>Créditos y pagos</option>
+                <option>Otro</option>
+              </select>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="position:absolute;right:18px;top:50%;transform:translateY(-50%);pointer-events:none"><path d="M6 9l6 6 6-6" stroke="#515151" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+          </div>
+          <div>
+            <label style="display:block;font-size:13px;font-weight:600;color:#101010;margin-bottom:8px">Mensaje</label>
+            <textarea placeholder="Cuéntanos qué necesitas" rows="4" style="width:100%;border:1px solid #E8EAEC;border-radius:18px;padding:14px 18px;font-size:15px;font-family:inherit;background:#F4F5F6;color:#101010;resize:vertical"></textarea>
+          </div>
+          <label style="display:flex;align-items:flex-start;gap:10px;cursor:pointer">
+            <input type="checkbox" style="margin-top:3px;flex-shrink:0" />
+            <span style="font-size:13px;color:#515151;line-height:1.5">Acepto el <a href="#" style="font-weight:600">aviso de privacidad</a> de El Compapitch.</span>
+          </label>
+          <button type="submit" style="background:#6B7A90;color:#FFFFFF;font-size:16px;font-weight:700;padding:16px 32px;border-radius:999px;border:none;font-family:inherit;cursor:pointer;margin-top:8px" style-hover="background:#55657C">Enviar mensaje</button>
+        </form>
+      </div>
+
+      <div style="display:flex;flex-direction:column;gap:16px">
+        <a href="#" style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:24px;padding:24px;display:flex;align-items:center;gap:16px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:14px;background:#101010;flex-shrink:0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="#FFFFFF" stroke-width="1.6"/><path d="M4 7l8 6 8-6" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <span style="display:block;font-size:15px;font-weight:700;color:#101010">Correo</span>
+            <span style="display:block;font-size:14px;color:#515151">hola@compapitch.com</span>
+          </div>
+        </a>
+        <a href="#" style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:24px;padding:24px;display:flex;align-items:center;gap:16px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:14px;background:#101010;flex-shrink:0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 20l1.4-4.2A8 8 0 1112 20a8 8 0 01-4-1.1L4 20z" stroke="#FFFFFF" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 10c0 3 2 5 5 5" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round"/></svg>
+          </span>
+          <div>
+            <span style="display:block;font-size:15px;font-weight:700;color:#101010">WhatsApp</span>
+            <span style="display:block;font-size:14px;color:#515151">+52 33 1234 5678</span>
+          </div>
+        </a>
+        <a href="#" style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:24px;padding:24px;display:flex;align-items:center;gap:16px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:14px;background:#101010;flex-shrink:0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#FFFFFF" stroke-width="1.8"/><path d="M12 7v5l3.5 2" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <div>
+            <span style="display:block;font-size:15px;font-weight:700;color:#101010">Agendar llamada</span>
+            <span style="display:block;font-size:14px;color:#515151">30 minutos, sin costo</span>
+          </div>
+        </a>
+        <div style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:24px;padding:24px;display:flex;align-items:center;gap:16px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border-radius:14px;background:#101010;flex-shrink:0">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 21s7-6.5 7-11.5A7 7 0 105 9.5C5 14.5 12 21 12 21z" stroke="#FFFFFF" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.4" stroke="#FFFFFF" stroke-width="1.6"/></svg>
+          </span>
+          <div>
+            <span style="display:block;font-size:15px;font-weight:700;color:#101010">Ubicación</span>
+            <span style="display:block;font-size:14px;color:#515151">Guadalajara, Jalisco</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ -->
+    <div style="margin-bottom:32px">
+      <div style="max-width:640px;margin:0 auto 40px;text-align:center">
+        <h2 style="font-size:32px;font-weight:800;margin:0;letter-spacing:-0.01em">Preguntas frecuentes</h2>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px;max-width:760px;margin:0 auto">
+        <div style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:24px;padding:24px 28px">
+          <button onClick="{{ toggleFaq0 }}" style="width:100%;background:none;border:none;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0;font-family:inherit">
+            <span style="font-size:16px;font-weight:700;color:#101010;text-align:left">¿Cómo funcionan los créditos?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="{{ faqIconStyle0 }}"><path d="M6 9l6 6 6-6" stroke="#515151" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <sc-if value="{{ faqOpen0 }}">
+            <p style="font-size:15px;color:#515151;line-height:1.6;margin:16px 0 0">Cada herramienta tiene un costo fijo en créditos que se cobra al generar el resultado. Recibes 80 créditos gratis al registrarte y puedes comprar más cuando los necesites.</p>
+          </sc-if>
+        </div>
+        <div style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:24px;padding:24px 28px">
+          <button onClick="{{ toggleFaq1 }}" style="width:100%;background:none;border:none;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0;font-family:inherit">
+            <span style="font-size:16px;font-weight:700;color:#101010;text-align:left">¿Cuánto tardan los servicios personalizados?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="{{ faqIconStyle1 }}"><path d="M6 9l6 6 6-6" stroke="#515151" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <sc-if value="{{ faqOpen1 }}">
+            <p style="font-size:15px;color:#515151;line-height:1.6;margin:16px 0 0">Depende del servicio — desde 48 horas para una presentación hasta 2-3 semanas para un CRM a la medida. Te damos un tiempo estimado exacto al cotizar.</p>
+          </sc-if>
+        </div>
+        <div style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:24px;padding:24px 28px">
+          <button onClick="{{ toggleFaq2 }}" style="width:100%;background:none;border:none;display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:0;font-family:inherit">
+            <span style="font-size:16px;font-weight:700;color:#101010;text-align:left">¿Necesito saber de IA para usar las herramientas?</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" style="{{ faqIconStyle2 }}"><path d="M6 9l6 6 6-6" stroke="#515151" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <sc-if value="{{ faqOpen2 }}">
+            <p style="font-size:15px;color:#515151;line-height:1.6;margin:16px 0 0">No. Llenas un formulario simple y la herramienta hace el trabajo. No necesitas conocimiento técnico de ningún tipo.</p>
+          </sc-if>
+        </div>
+      </div>
+    </div>
+
+    <!-- CIERRE -->
+    <div style="background:#101010;border-radius:32px;padding:48px 56px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:24px;max-width:760px;margin:0 auto">
+      <div>
+        <h3 style="font-size:20px;font-weight:700;color:#FFFFFF;margin:0 0 6px">¿No encontraste lo que buscabas?</h3>
+        <p style="font-size:15px;color:#8B8F95;margin:0">Escríbenos y te respondemos directamente.</p>
+      </div>
+      <a href="#" style="background:#6B7A90;color:#FFFFFF;font-size:15px;font-weight:700;padding:14px 28px;border-radius:999px;display:inline-block;flex-shrink:0" style-hover="background:#55657C">Escríbenos</a>
+    </div>
+
+  </main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  state = { faqOpen: [false, false, false] };
+
+  toggle(i) {
+    this.setState(s => {
+      const faqOpen = [...s.faqOpen];
+      faqOpen[i] = !faqOpen[i];
+      return { faqOpen };
+    });
+  }
+
+  renderVals() {
+    const chevron = (open) => `transition:transform 0.2s;flex-shrink:0;transform:${open ? 'rotate(180deg)' : 'rotate(0deg)'}`;
+    return {
+      faqOpen0: this.state.faqOpen[0],
+      faqOpen1: this.state.faqOpen[1],
+      faqOpen2: this.state.faqOpen[2],
+      faqIconStyle0: chevron(this.state.faqOpen[0]),
+      faqIconStyle1: chevron(this.state.faqOpen[1]),
+      faqIconStyle2: chevron(this.state.faqOpen[2]),
+      toggleFaq0: () => this.toggle(0),
+      toggleFaq1: () => this.toggle(1),
+      toggleFaq2: () => this.toggle(2),
+    };
+  }
+}
+</script>
+</body>
+</html>

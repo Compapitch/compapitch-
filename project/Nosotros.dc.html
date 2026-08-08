@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F4F5F6; font-family: 'Plus Jakarta Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #6B7A90; text-decoration: none; }
+    a:hover { color: #55657C; }
+    * { box-sizing: border-box; }
+  </style>
+  <script src="./image-slot.js"></script>
+</helmet>
+
+<div style="background:#F4F5F6;color:#101010;min-height:100vh">
+  <main style="max-width:1240px;margin:0 auto;padding:48px 32px 96px">
+
+    <nav style="display:flex;align-items:center;gap:8px;margin-bottom:32px">
+      <a href="#" style="font-size:14px;font-weight:600;color:#8B8F95">Inicio</a>
+      <span style="font-size:14px;color:#8B8F95">/</span>
+      <span style="font-size:14px;font-weight:600;color:#101010">Nosotros</span>
+    </nav>
+
+    <!-- HERO -->
+    <section style="position:relative;width:100%;height:600px;overflow:hidden;margin:0 -32px 96px">
+      <image-slot id="nosotros-rodrigo" shape="rect" placeholder="Foto de Rodrigo — luz natural, fondo claro" style="position:absolute;inset:0;width:100%;height:100%"></image-slot>
+      <div style="position:absolute;inset:0;background:linear-gradient(90deg, rgba(16,16,16,0.82) 0%, rgba(16,16,16,0.55) 42%, rgba(16,16,16,0.05) 70%)"></div>
+      <div style="position:relative;height:100%;display:flex;align-items:center;padding:0 32px">
+        <div style="max-width:560px">
+          <span style="font-size:13px;font-weight:700;color:#DCE3EC;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:16px">Nosotros</span>
+          <h1 style="font-size:44px;font-weight:800;margin:0 0 20px;letter-spacing:-0.01em;line-height:1.15;color:#FFFFFF">Hecho por un broker, para brokers.</h1>
+          <p style="font-size:17px;color:#E8EAEC;line-height:1.65;margin:0">Soy Rodrigo. Vendí propiedades antes de construir herramientas para vender propiedades. El Compapitch nació de lo que a mí me hubiera servido tener desde el primer día.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIA -->
+    <div style="display:grid;grid-template-columns:0.9fr 1.1fr;gap:56px;align-items:center;margin-bottom:96px">
+      <div>
+        <span style="font-size:13px;font-weight:700;color:#6B7A90;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:14px">Nuestra historia</span>
+        <h2 style="font-size:32px;font-weight:800;margin:0 0 24px;letter-spacing:-0.01em;line-height:1.2">Por qué existe El Compapitch</h2>
+        <div style="display:flex;flex-direction:column;gap:20px">
+          <p style="font-size:16px;color:#515151;line-height:1.7;margin:0">Empecé como broker independiente, compitiendo contra agencias con equipos completos de diseño, análisis y marketing. Cada cotización, cada comparable, cada presentación me tomaba horas que ellos resolvían con un clic.</p>
+          <p style="font-size:16px;color:#515151;line-height:1.7;margin:0">Con el tiempo aprendí a usar IA para hacer ese trabajo en minutos. Y noté que la mayoría de los brokers nuevos —los que más lo necesitan— no tienen ni el tiempo ni el conocimiento técnico para llegar ahí solos.</p>
+          <p style="font-size:16px;color:#515151;line-height:1.7;margin:0">El Compapitch es esa brecha resuelta: herramientas listas para usar, sin necesidad de entender de IA, para que cualquier broker compita de tú a tú con las agencias más grandes.</p>
+        </div>
+      </div>
+      <div style="min-width:0">
+        <image-slot id="nosotros-escritorio" shape="rounded" radius="24" placeholder="Foto de Rodrigo — detrás de cámaras / escritorio de trabajo" style="width:100%;height:480px"></image-slot>
+      </div>
+    </div>
+
+    <!-- COMO TRABAJAMOS -->
+    <div style="margin-bottom:96px">
+      <div style="max-width:640px;margin:0 auto 48px;text-align:center">
+        <span style="font-size:13px;font-weight:700;color:#6B7A90;letter-spacing:0.06em;text-transform:uppercase;display:block;margin-bottom:14px">Cómo trabajamos</span>
+        <h2 style="font-size:34px;font-weight:800;margin:0;letter-spacing:-0.01em">En qué creemos</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(3, minmax(0,1fr));gap:24px">
+        <div style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:32px;padding:32px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:16px;background:#101010;margin-bottom:20px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+          <h3 style="font-size:18px;font-weight:700;margin:0 0 10px">Herramientas reales, no promesas</h3>
+          <p style="font-size:15px;color:#515151;line-height:1.6;margin:0">Cada herramienta funciona desde el primer uso. Sin demos falsas, sin "próximamente" eterno.</p>
+        </div>
+        <div style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:32px;padding:32px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:16px;background:#101010;margin-bottom:20px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M4 7h9M17 7h3M4 17h3M9 17h11" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/><circle cx="12" cy="7" r="2.3" stroke="#FFFFFF" stroke-width="1.8"/><circle cx="6" cy="17" r="2.3" stroke="#FFFFFF" stroke-width="1.8"/></svg>
+          </span>
+          <h3 style="font-size:18px;font-weight:700;margin:0 0 10px">Sin complicaciones técnicas</h3>
+          <p style="font-size:15px;color:#515151;line-height:1.6;margin:0">No necesitas saber de IA. Llenas un formulario y listo.</p>
+        </div>
+        <div style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:32px;padding:32px">
+          <span style="display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:16px;background:#101010;margin-bottom:20px">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><rect x="4" y="14" width="3.2" height="7" rx="0.8" stroke="#FFFFFF" stroke-width="1.6"/><rect x="10.4" y="9" width="3.2" height="12" rx="0.8" stroke="#FFFFFF" stroke-width="1.6"/><rect x="16.8" y="4" width="3.2" height="17" rx="0.8" stroke="#FFFFFF" stroke-width="1.6"/></svg>
+          </span>
+          <h3 style="font-size:18px;font-weight:700;margin:0 0 10px">Resultados que se notan</h3>
+          <p style="font-size:15px;color:#515151;line-height:1.6;margin:0">Menos tiempo en tareas operativas, más tiempo cerrando ventas.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div style="background:#101010;border-radius:32px;padding:72px 64px;text-align:center">
+      <h2 style="font-size:36px;font-weight:800;color:#FFFFFF;margin:0 0 16px;letter-spacing:-0.01em">¿Listo para empezar?</h2>
+      <p style="font-size:17px;color:#8B8F95;margin:0 0 32px">80 créditos de bienvenida. Sin tarjeta.</p>
+      <a href="#" style="background:#6B7A90;color:#FFFFFF;font-size:16px;font-weight:700;padding:16px 36px;border-radius:999px;display:inline-block" style-hover="background:#55657C">Únete gratis</a>
+    </div>
+
+  </main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {}
+</script>
+</body>
+</html>

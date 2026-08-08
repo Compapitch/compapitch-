@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; background: #F4F5F6; font-family: 'Plus Jakarta Sans', sans-serif; -webkit-font-smoothing: antialiased; }
+    a { color: #6B7A90; text-decoration: none; }
+    a:hover { color: #55657C; }
+    * { box-sizing: border-box; }
+    input::placeholder { color: #8B8F95; }
+  </style>
+</helmet>
+
+<div style="background:#F4F5F6;color:#101010;min-height:100vh">
+  <main style="max-width:760px;margin:0 auto;padding:48px 32px 96px">
+
+    <nav style="display:flex;align-items:center;gap:8px;margin-bottom:32px">
+      <a href="#" style="font-size:14px;font-weight:600;color:#8B8F95">Dashboard</a>
+      <span style="font-size:14px;color:#8B8F95">/</span>
+      <a href="#" style="font-size:14px;font-weight:600;color:#8B8F95">Herramientas</a>
+      <span style="font-size:14px;color:#8B8F95">/</span>
+      <span style="font-size:14px;font-weight:600;color:#101010">SmartComps</span>
+    </nav>
+
+    <div style="display:flex;align-items:center;gap:16px;margin-bottom:40px">
+      <span style="display:inline-flex;align-items:center;justify-content:center;width:56px;height:56px;border-radius:16px;background:#DCE3EC;flex-shrink:0">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><rect x="3" y="12" width="4" height="9" rx="1" stroke="#55657C" stroke-width="1.6"/><rect x="10" y="7" width="4" height="14" rx="1" stroke="#55657C" stroke-width="1.6"/><rect x="17" y="3" width="4" height="18" rx="1" stroke="#55657C" stroke-width="1.6"/></svg>
+      </span>
+      <div>
+        <h1 style="font-size:28px;font-weight:800;margin:0 0 4px;letter-spacing:-0.01em">SmartComps</h1>
+        <p style="font-size:15px;color:#515151;margin:0">Reporte de valuación con comparables reales.</p>
+      </div>
+    </div>
+
+    <div style="background:#FFFFFF;border:1px solid #E8EAEC;border-radius:32px;padding:40px;margin-bottom:24px">
+      <div style="display:flex;flex-direction:column;gap:20px;margin-bottom:32px">
+        <div>
+          <label style="display:block;font-size:13px;font-weight:600;color:#101010;margin-bottom:8px">Dirección o link de la propiedad</label>
+          <input type="text" placeholder="Ej. Av. Vallarta 1234, Guadalajara" style="width:100%;border:1px solid #E8EAEC;border-radius:18px;padding:14px 18px;font-size:15px;font-family:inherit;background:#F4F5F6;color:#101010" />
+        </div>
+        <div>
+          <label style="display:block;font-size:13px;font-weight:600;color:#101010;margin-bottom:8px">Tipo de propiedad</label>
+          <div style="position:relative">
+            <select style="width:100%;border:1px solid #E8EAEC;border-radius:18px;padding:14px 44px 14px 18px;font-size:15px;font-family:inherit;background:#F4F5F6;color:#101010;appearance:none">
+              <option>Casa</option>
+              <option>Departamento</option>
+              <option>Terreno</option>
+              <option>Local comercial</option>
+            </select>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="position:absolute;right:18px;top:50%;transform:translateY(-50%);pointer-events:none"><path d="M6 9l6 6 6-6" stroke="#515151" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;padding-top:24px;border-top:1px solid #E8EAEC">
+        <div>
+          <span style="display:block;font-size:13px;color:#8B8F95;margin-bottom:4px">Costo por reporte</span>
+          <span style="display:inline-flex;align-items:center;background:#DCE3EC;color:#55657C;font-size:14px;font-weight:700;padding:6px 14px;border-radius:999px">8 créditos</span>
+        </div>
+        <button type="button" style="background:#6B7A90;color:#FFFFFF;font-size:16px;font-weight:700;padding:16px 32px;border-radius:999px;border:none;font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;gap:10px" style-hover="background:#55657C">Generar reporte
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+      <p style="font-size:13px;color:#8B8F95;margin:14px 0 0;text-align:right">Se descuentan 8 créditos al generar el reporte.</p>
+    </div>
+
+    <div style="border:2px dashed #E8EAEC;border-radius:32px;padding:64px 32px;text-align:center">
+      <span style="font-size:15px;color:#8B8F95;font-weight:600">Tu resultado aparecerá aquí</span>
+    </div>
+
+  </main>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {}
+</script>
+</body>
+</html>
