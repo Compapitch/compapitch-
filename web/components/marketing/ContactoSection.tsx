@@ -77,14 +77,25 @@ export function ContactoSection() {
                 "Cada herramienta tiene un costo fijo en créditos que se cobra al generar el resultado. Recibes 80 créditos gratis al registrarte y puedes comprar más cuando los necesites.",
             },
             {
-              question: "¿Cuánto tardan los servicios personalizados?",
+              question: "No puedo usar una herramienta, ¿qué hago?",
               answer:
-                "Depende del servicio — desde 48 horas para una presentación hasta 2-3 semanas para un CRM a la medida. Te damos un tiempo estimado exacto al cotizar.",
+                "Revisa primero que tengas créditos suficientes en tu cuenta — lo ves en el dashboard. Si el problema sigue, escríbenos por WhatsApp o correo y te ayudamos directamente.",
+            },
+            {
+              question: "¿Los créditos caducan o hay algún compromiso?",
+              answer:
+                "No hay suscripción ni compromiso de permanencia. Tus créditos no caducan — se quedan en tu cuenta hasta que los uses.",
             },
             {
               question: "¿Necesito saber de IA para usar las herramientas?",
               answer:
                 "No. Llenas un formulario simple y la herramienta hace el trabajo. No necesitas conocimiento técnico de ningún tipo.",
+            },
+            {
+              question:
+                "¿Qué pasa con la información de mis clientes que subo a las herramientas?",
+              answer:
+                "Se usa únicamente para generar el resultado que pediste — no se comparte con terceros ni se usa para entrenar modelos de IA. Puedes pedir que se elimine en cualquier momento.",
             },
           ]}
         />
