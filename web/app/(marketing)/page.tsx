@@ -3,8 +3,6 @@ import { PhotoPlaceholder } from "@/components/ui/PhotoPlaceholder";
 import { PillButton } from "@/components/ui/Button";
 import { Eyebrow } from "@/components/ui/Breadcrumb";
 import { HerramientasSection } from "@/components/marketing/HerramientasSection";
-import { ServiciosSection } from "@/components/marketing/ServiciosSection";
-import { NosotrosSection } from "@/components/marketing/NosotrosSection";
 import { ContactoSection } from "@/components/marketing/ContactoSection";
 import {
   IconBolt,
@@ -84,8 +82,8 @@ export default async function LandingPage() {
               CRM a la medida, video con IA, páginas web y más. Se cotiza
               aparte, según cómo vendes.
             </p>
-            <PillButton href="#servicios" variant="dark" size="sm" icon>
-              Ver servicios
+            <PillButton href="#contacto" variant="dark" size="sm" icon>
+              Cotizar servicio
             </PillButton>
           </div>
         </div>
@@ -117,8 +115,8 @@ export default async function LandingPage() {
               />
             </div>
           </div>
-          <PillButton href="#nosotros" variant="dark" size="sm" icon className="self-start">
-            Conocer más
+          <PillButton href="#contacto" variant="dark" size="sm" icon className="self-start">
+            Hablemos
           </PillButton>
         </div>
 
@@ -183,8 +181,6 @@ export default async function LandingPage() {
 
       <div className="divide-y divide-border">
         <HerramientasSection tools={tools ?? []} />
-        <ServiciosSection />
-        <NosotrosSection />
         <ContactoSection />
       </div>
     </>
